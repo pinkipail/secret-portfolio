@@ -23,7 +23,7 @@ body{
 	font-family: 'B52';
 	overflow-x: hidden;
 	font-size: 22px;
-	background: url('img/bg.jpg') no-repeat center;	
+	background: url(/secret-portfolio/img/bg.jpg) no-repeat center;	
 }
 
 * {	
