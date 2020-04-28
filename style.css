@@ -138,6 +138,7 @@ body{
 }
 
 a {
+	user-select: auto;
 	display: inline-block;
 	text-decoration: none;
 	position: relative;
@@ -153,7 +154,7 @@ a::after {
 
 	width: 0;
 	height: 2px;
-	background: url(/secret-portfolio/img/underline.png) no-repeat center;
+	background: url(./img/underline.png) no-repeat center;
 	background-size: 100%;
 	transition-duration: 0.5s;
 }
@@ -186,6 +187,10 @@ a:hover::after {
 .night .switch {
 	background: url(/secret-portfolio/img/btn-on.png) no-repeat center;
 	background-size: 95%
+}
+
+.night .switch:hover {
+	background-size: 105%
 }
 
 .night .photo {
