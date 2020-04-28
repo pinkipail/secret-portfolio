@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:normal,normalitalic,700);
+
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 5px 0;
+}
+
+span {
+
+	font-size: 18px;
+}
+
+body{
+	font-family: 'B52';
+	overflow-x: hidden;
+	font-size: 22px;
+/* 	background: #000; */
+
+	
+}
+
+* {	
+	z-index: 20;
+    color: rgba(0,0,0,1);
+
+	user-select: none;
+	font-family: 'B52';
+}
+
+
+/* Block Scroll */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border: 5px solid #000;
+    border-radius: 15px;
+}
+
+ /* /Block Scroll */ 
+
+/* Content */
+
+.wrapper {
+	position: relative;
+	max-width: 768px;
+	min-width: 400px;
+	margin: 50px auto;
+	padding: 15px;	
+
+}
+
+.switch {
+	width: 200px;
+	height: 70px;
+
+	position: absolute;
+	right: 0;
+
+	background: url(/img/btn-on.png) no-repeat center;
+	background-size: 100%;
+}
+
+.full-block {
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	font-size: 46px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block {
+	width: 350px;
+	margin: 15px 0;
+}
+
+.photo {
+
+	width: 210px;
+	height: 100%;
+
+	background: #000;
+
+	background: url(/img/user.svg) no-repeat top;
+ 	background-size: 100%;
+	border: 10px solid rgba(255, 255, 255, 0);
+}
+
+.title {
+	margin: 5px 0;
+	font-size: 30px;
+	font-weight: 600;
+
+	text-decoration: underline;
+}
+
+.text {
+	text-align: justify;
+}
+
+
+
+
+
+/* /Content */
+
+/*/////////////////////////////////  FLASHLIGHT EFFECT ////////////////////////////  */
+
+#light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    z-index: 1;
+    -webkit-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 150px 166px rgba(0,0,0,1);
+    border-radius: 50%;
+	animation: light 60s infinite;
+	display: none;
+}
+
+@keyframes light {
+	0% {
+		opacity: 1;
+    }
+    48.2% {
+		opacity: 1;
+	}
+	48.5% {
+		opacity: 0.5;
+	}
+	49% {
+		opacity: 1;
+	}
+	49.5% {
+		opacity: 0;
+    }
+    50% {
+		opacity: 1;
+    }
+	51.5% {
+		opacity: 0;
+    }
+    51.7% {
+		opacity: 1;
+    }
+    
+	99% {
+		opacity: 1;
+	}
+	99.3% {
+		opacity: 0;
+	}
+	99.6% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.light-dark {
+    width: 495px;
+    height: 495px;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 10px solid #000;
+    border-radius: 50%;
+
+    -webkit-box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    inset 0px 0px 30px 20px rgba(0, 0, 0, 1);
+    box-shadow:         inset 0px 0px 30px 20px rgba(0, 0, 0, 1);
+
+}
+
+
+
+
+/*//////////////////////////////// END FLASHLIGHT EFFECT ///////////////////////////  */
