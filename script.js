@@ -15,7 +15,7 @@ function mouseMove(){
 function toggleNightMpde(){
    const btnSwitch = document.querySelector('.switch')
    
-   btnSwitch.addEventListener('click', ()=>{
+   btnSwitch.addEventListener('click', function(){
       document.body.classList.toggle('night')
    })
 }
